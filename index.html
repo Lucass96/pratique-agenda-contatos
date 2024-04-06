@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/icone-agenda.png">
+            <h1>Agenda de contatos</h1>
+        </header>
+
+        <section>
+            <form id="formulario">
+                <h2>Insira os dados:</h2>
+                <input id="name" type="text" placeholder="Digite um nome" required>
+                <input id="phone" type="number" placeholder="(DDD) 9XXXX-XXXX" required>
+                <input id="mail" type="email" placeholder="example@example.com" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+    
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Contatos cadastrados:</td>
+                        <td id="total">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
